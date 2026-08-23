@@ -22,7 +22,7 @@ int main() {
 
 int SomaElementosPares(int* vet, int numElementos) {
     /*
-    Funcionamento da recurcao:
+    Funcionamento da recursao:
         *verifica se numElementos > 0, para nao ocorrer acesso fora dos limites
         *soma vet[numElementos - 1] + chamada de funcao, e decrementa numElementos,
         percorrendo o vetor de tras para frente
