@@ -4,12 +4,6 @@
 
 void ImprimeInvertido(char string[]);
 
-int contaVetor(char string[]);
-
-int leVetor(char string[]);
-
-void imprimeVet(char string[]);
-
 int main() {
     char string[MAX_CHAR];
     int qtd = 0;
