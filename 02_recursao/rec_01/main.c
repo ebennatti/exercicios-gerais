@@ -21,6 +21,14 @@ int main() {
 }
 
 void ImprimeInvertido(char string[]) {
+    /*
+    Funcionamento da recursao:
+        *caso o primeiro caractere seja nulo (\0), retorna
+        *se nao for, chama a funcao novamente chamando como parametro string + 1,
+        fazendo o ponteiro apontar para o proximo char
+        *a primeira chamada fica na stack e so e executada apos todas as outras, assim sucessivamente
+        *a string e impressa invertida
+    */
     if(string[0] == '\0')
         return;
     else {
