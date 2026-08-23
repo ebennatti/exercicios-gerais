@@ -1,0 +1,27 @@
+mkdir -p outprog
+
+./teste < input/test_1 > outprog/test_1
+./teste < input/test_2 > outprog/test_2
+./teste < input/test_3 > outprog/test_3
+./teste < input/test_4 > outprog/test_4
+./teste < input/test_5 > outprog/test_5
+./teste < input/test_6 > outprog/test_6
+./teste < input/test_7 > outprog/test_7
+./teste < input/test_8 > outprog/test_8
+./teste < input/test_9 > outprog/test_9
+./teste < input/test_10 > outprog/test_10
+./teste < input/test_11 > outprog/test_11
+./teste < input/test_12 > outprog/test_12
+./teste < input/test_13 > outprog/test_13
+./teste < input/test_14 > outprog/test_14
+./teste < input/test_15 > outprog/test_15
+./teste < input/test_16 > outprog/test_16
+./teste < input/test_17 > outprog/test_17
+./teste < input/test_18 > outprog/test_18
+./teste < input/test_19 > outprog/test_19
+./teste < input/test_20 > outprog/test_20
+./teste < input/test_21 > outprog/test_21
+./teste < input/test_22 > outprog/test_22
+
+
+diff -r output/ outprog/
