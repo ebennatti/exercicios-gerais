@@ -1,0 +1,4 @@
+main.c: In function ‘main’:
+main.c:30:13: warning: unused variable ‘reservas’ [-Wunused-variable]
+   30 |     Reserva reservas[resSol];
+      |             ^~~~~~~~
