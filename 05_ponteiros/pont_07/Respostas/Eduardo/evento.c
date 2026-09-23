@@ -20,7 +20,10 @@ typedef struct {
  * @param numEventos Ponteiro para o número atual de eventos cadastrados.
  */
 void cadastrarEvento(Evento* eventos, int* numEventos) {
-    
+    scanf(" %[^\n]", eventos[*numEventos].nome);
+    scanf(" %d %d %d", &eventos[*numEventos].dia, &eventos[*numEventos].mes, &eventos[*numEventos].ano); 
+    *numEventos += 1;
+    printf("Evento cadastrado com sucesso!\n");
 }
 
 /**
@@ -29,7 +32,14 @@ void cadastrarEvento(Evento* eventos, int* numEventos) {
  * @param eventos Array de eventos a serem exibidos.
  * @param numEventos Ponteiro para o número total de eventos cadastrados.
  */
-void exibirEventos(Evento* eventos, int* numEventos);
+void exibirEventos(Evento* eventos, int* numEventos) {
+
+    printf("Eventos cadastrados:\n");
+
+    for(int i = 0; i < *numEventos; i++) {
+        printf("%d - %s - %d/%d/%d\n", i, eventos[i].nome, eventos[i].dia, eventos[i].mes, eventos[i].ano);    
+    }
+}
 
 /**
  * Troca a data de um evento específico no calendário.
@@ -37,7 +47,16 @@ void exibirEventos(Evento* eventos, int* numEventos);
  * @param eventos Array de eventos onde o evento será modificado.
  * @param numEventos Ponteiro para o número total de eventos cadastrados.
  */
-void trocarDataEvento(Evento* eventos, int* numEventos);
+void trocarDataEvento(Evento* eventos, int* numEventos) {
+    int evento;
+    scanf(" %d", &evento);
+    if(evento < 0 || evento >= *numEventos) {
+        printf("Indice invalido!\n");
+    } else {
+        scanf(" %d %d %d", &eventos[evento].dia, &eventos[evento].mes, &eventos[evento].ano);
+        printf("Data modificada com sucesso!\n");
+    }
+}
 
 /**
  * Troca a posição de dois eventos, a partir do índice, dentro do array de eventos.
@@ -47,4 +66,14 @@ void trocarDataEvento(Evento* eventos, int* numEventos);
  * @param indiceB Ponteiro para o segundo índice.
  * @param numEventos Ponteiro para o número total de eventos cadastrados.
  */
-void trocarIndicesEventos(Evento* eventos, int* indiceA, int* indiceB, int* numEventos);
+void trocarIndicesEventos(Evento* eventos, int* indiceA, int* indiceB, int* numEventos) {
+    Evento temp;
+    if(*indiceA < 0 || *indiceA >= *numEventos || *indiceB < 0 || *indiceB >= *numEventos) {
+        printf("Indices invalidos!\n");
+    } else {
+        temp = eventos[*indiceA];
+        eventos[*indiceA] = eventos[*indiceB];
+        eventos[*indiceB] = temp;
+        printf("Eventos trocados com sucesso!\n");
+    }
+}
