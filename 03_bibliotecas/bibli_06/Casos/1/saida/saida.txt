@@ -1,1 +1,1 @@
-Temperatura: 298.15K
+Temperature: 298.15K

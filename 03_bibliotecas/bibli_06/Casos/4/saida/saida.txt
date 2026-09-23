@@ -1,1 +1,1 @@
-Temperatura: 212.00Fº
+Temperature: 212.00Fº
