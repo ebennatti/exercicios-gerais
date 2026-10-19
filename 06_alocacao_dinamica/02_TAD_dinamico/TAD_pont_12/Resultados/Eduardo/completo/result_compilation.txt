@@ -1,0 +1,7 @@
+array.c: In function ‘LerArray’:
+array.c:42:23: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+   42 |         array->data = (int) realloc(array->data, array->tamanho*sizeof(int));
+      |                       ^
+array.c:42:21: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+   42 |         array->data = (int) realloc(array->data, array->tamanho*sizeof(int));
+      |                     ^
