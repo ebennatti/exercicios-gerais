@@ -1,8 +1,0 @@
-/usr/bin/ld: Resultados/Eduardo/partida/nba.o: in function `ProcessaPartida':
-nba.c:(.text+0x2a6): undefined reference to `LePartida'
-/usr/bin/ld: nba.c:(.text+0x2c9): undefined reference to `GetTime1Partida'
-/usr/bin/ld: nba.c:(.text+0x2eb): undefined reference to `GetTime2Partida'
-/usr/bin/ld: nba.c:(.text+0x336): undefined reference to `GetVencedorPartida'
-/usr/bin/ld: Resultados/Eduardo/partida/nba.o: in function `LiberaNBA':
-nba.c:(.text+0x6d3): undefined reference to `LiberaPartida'
-collect2: error: ld returned 1 exit status

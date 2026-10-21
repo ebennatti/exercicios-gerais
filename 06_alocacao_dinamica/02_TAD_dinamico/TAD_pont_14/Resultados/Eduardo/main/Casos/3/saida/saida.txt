@@ -1,1 +1,2 @@
-valgrind: Resultados/Eduardo/main/prog: No such file or directory
+LESTE 0 0 0.00
+OESTE 0 0 0.00
