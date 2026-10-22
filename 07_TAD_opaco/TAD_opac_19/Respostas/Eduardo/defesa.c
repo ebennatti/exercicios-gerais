@@ -41,7 +41,7 @@ tDefesa LeDefesa() {
  * @param defesa Ponteiro para a defesa que será impressa.
  */
 void ImprimeDefesa(tDefesa defesa) {
-    printf("D-%s: %d\n", defesa->qtd);
+    printf("D-%s: %d\n", defesa->nome, defesa->qtd);
 }
 
 /**
@@ -62,8 +62,21 @@ void LiberaDefesa(tDefesa defesa) {
  * @return int 1 se o ponto está dentro da área de defesa, 0 caso contrário.
  */
 int VerificaSeDentroArea(tDefesa defesa, float x, float y) {
+    float distx = fabs((x - defesa->x)), disty = fabs((y - defesa->y));
     if(defesa->tipo == 'C') {
-        
+        float dist = sqrt(pow(distx, 2) + pow(disty, 2));
+        if(dist < defesa->tamanho)
+            return 1;
+        else
+            return 0;
+    } else if(defesa->tipo == 'Q') {
+        float lado = sqrt(pow((2*defesa->tamanho), 2)/2.0);
+        float supEsqx = defesa->x - lado/2, supesqy = defesa->y + lado/2;
+        float infDirx = defesa->x + lado/2, infDiry = defesa->y - lado/2;
+        if(x > supEsqx && x < infDirx && y > infDiry && y < supesqy)
+            return 1;
+        else
+            return 0;
     }
 }
 
@@ -72,7 +85,9 @@ int VerificaSeDentroArea(tDefesa defesa, float x, float y) {
  * 
  * @param defesa Ponteiro para a defesa que será usada.
  */
-void UsaDefesa(tDefesa defesa);
+void UsaDefesa(tDefesa defesa) {
+    defesa->qtd--;
+}
 
 /**
  * @brief Obtém o poder de defesa da defesa.
@@ -80,7 +95,9 @@ void UsaDefesa(tDefesa defesa);
  * @param defesa Ponteiro para a defesa que terá o poder de defesa obtido.
  * @return float Poder de defesa da defesa.
  */
-float GetDefesaPoder(tDefesa defesa);
+float GetDefesaPoder(tDefesa defesa) {
+    return defesa->poder;
+}
 
 /**
  * @brief Verifica exclusivamente se a quantidade de munição é maior que zero.
@@ -88,4 +105,6 @@ float GetDefesaPoder(tDefesa defesa);
  * @param defesa Ponteiro para a defesa que será verificada.
  * @return int 1 se a defesa pode defender, 0 caso contrário.
  */
-int PodeDefender(tDefesa defesa);
+int PodeDefender(tDefesa defesa) {
+    return (defesa->qtd > 0);
+}

@@ -1,0 +1,32 @@
+==91583== Memcheck, a memory error detector
+==91583== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==91583== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==91583== Command: Resultados/Eduardo/cidade/prog Resultados/Eduardo/cidade/Casos/5
+==91583== Parent PID: 91582
+==91583== 
+==91583== 
+==91583== HEAP SUMMARY:
+==91583==     in use at exit: 29 bytes in 14 blocks
+==91583==   total heap usage: 47 allocs, 33 frees, 10,205 bytes allocated
+==91583== 
+==91583== 8 bytes in 4 blocks are definitely lost in loss record 1 of 2
+==91583==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==91583==    by 0x1097DF: LeDefesa (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583==    by 0x1093AC: LeEntrada (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583==    by 0x109A9D: main (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583== 
+==91583== 21 bytes in 10 blocks are definitely lost in loss record 2 of 2
+==91583==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==91583==    by 0x109B3F: LeMissil (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583==    by 0x10936B: LeEntrada (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583==    by 0x109A9D: main (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
+==91583== 
+==91583== LEAK SUMMARY:
+==91583==    definitely lost: 29 bytes in 14 blocks
+==91583==    indirectly lost: 0 bytes in 0 blocks
+==91583==      possibly lost: 0 bytes in 0 blocks
+==91583==    still reachable: 0 bytes in 0 blocks
+==91583==         suppressed: 0 bytes in 0 blocks
+==91583== 
+==91583== For lists of detected and suppressed errors, rerun with: -s
+==91583== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

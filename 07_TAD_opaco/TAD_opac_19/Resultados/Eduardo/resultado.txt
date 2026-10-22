@@ -1,6 +1,6 @@
-Arquivos Esperados Corretos: 4 de 7
-Pastas Compiladas Corretamente: 3 de 5 
-Pastas Linkadas Corretamente: 1 de 5
+Arquivos Esperados Corretos: 7 de 7
+Pastas Compiladas Corretamente: 5 de 5 
+Pastas Linkadas Corretamente: 3 de 5
 Teste main
   - Resultados corretos: 0 de 5
   - Valgrinds corretos: 0 de 5
@@ -14,12 +14,12 @@ Teste missil
   - Valgrinds corretos: 5 de 5
 Nota de Eduardo para o teste missil: 2.00
 Teste defesa
-  - Resultados corretos: 0 de 5
-  - Valgrinds corretos: 0 de 5
-Nota de Eduardo para o teste defesa: 0
+  - Resultados corretos: 5 de 5
+  - Valgrinds corretos: 5 de 5
+Nota de Eduardo para o teste defesa: 2.00
 Teste cidade
   - Resultados corretos: 0 de 5
   - Valgrinds corretos: 0 de 5
 Nota de Eduardo para o teste cidade: 0
-Nota de Eduardo: 0+(0)+(2.00)+(0)+(0)+(0)
-Nota de Eduardo: 2.00
+Nota de Eduardo: 0+(2.00)+(2.00)+(0)+(0)+(0)
+Nota de Eduardo: 4.00

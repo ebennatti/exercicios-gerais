@@ -15,16 +15,20 @@
 //  * 
 //  */
 // typedef struct cidade * tCidade;
-
-struct cidade {
-    int x, y;
-};
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "cidade.h"
 #include "missil.h"
+#include "defesa.h"
+
+struct cidade {
+    char nome[MAX_NOME];
+    int x, y;
+    int qtdMisseis, qtdDefesas;
+    tMissil *listaMisseis;
+    tDefesa *listaDefesas;
+    float ataqueTotal, ataqueSofrido;
+};
 
 /**
  * @brief Lê os limites da cidade da entrada padrão e cria uma nova cidade.
@@ -33,7 +37,12 @@ struct cidade {
  */
 tCidade CriaCidade() {
     tCidade c = calloc(1, sizeof(*c));
-    scanf(" %d %d\n", &c->x, &c->y);
+    c->qtdDefesas = c->qtdMisseis = 0;
+    c->listaDefesas = calloc(QTD_DEF, sizeof(*c->listaDefesas));
+    c->listaMisseis = calloc(QTD_MIS, sizeof(*c->listaMisseis));
+    c->ataqueSofrido = 0;
+    c->ataqueTotal = 0;
+    scanf("C %d %d\n", &c->x, &c->y);
     return c;
 }
 
@@ -45,7 +54,19 @@ tCidade CriaCidade() {
  * @return tCidade Ponteiro para a cidade preenchida.
  */
 tCidade LeEntrada(tCidade cidade) {
+    char c;
 
+    while(scanf("%c", &c) == 1 && c != 'F') {
+        if(c == 'M') {
+            cidade->listaMisseis[cidade->qtdMisseis] = LeMissil(); 
+            cidade->qtdMisseis++;
+        } else if(c == 'D') {
+            cidade->listaDefesas[cidade->qtdDefesas] = LeDefesa();
+            cidade->qtdDefesas++;
+        }
+    }
+
+    return cidade;
 }
 
 /**
@@ -60,18 +81,51 @@ tCidade LeEntrada(tCidade cidade) {
  * 
  * @param cidade Ponteiro para a cidade que terá a memória liberada.
  */
-void LiberaCidade(tCidade cidade);
+void LiberaCidade(tCidade cidade) {
+    for(int i = 0; i < cidade->qtdDefesas; i++) {
+        free(cidade->listaDefesas[i]);
+    }
+    free(cidade->listaDefesas);
+
+    for(int i = 0; i < cidade->qtdMisseis; i++) {
+        free(cidade->listaMisseis[i]);
+    }
+    free(cidade->listaMisseis);
+
+    free(cidade);
+}
 
 /**
  * @brief Processa os ataques na cidade na ordem em que foram cadastrados.
  * 
  * @param cidade Ponteiro para a cidade que será atacada.
  */
-void ProcessaAtaques(tCidade cidade);
+void ProcessaAtaques(tCidade cidade) {
+    for(int i = 0; i < cidade->qtdMisseis; i++) {
+        cidade->ataqueTotal += GetMissilPoder(cidade->listaMisseis[i]);
+        for(int j = 0; j < cidade->qtdDefesas; j++) {
+            if(VerificaSeDentroArea(cidade->listaDefesas[j], GetMissilX(cidade->listaMisseis[i]), GetMissilY(cidade->listaMisseis[i]))) {
+                if(PodeDefender(cidade->listaDefesas[j])) {
+                    UsaDefesa(cidade->listaDefesas[j]);
+                    ReduzPoder(cidade->listaMisseis[i], GetDefesaPoder(cidade->listaDefesas[j]));
+                }
+            } 
+        }
+        cidade->ataqueSofrido += GetMissilPoder(cidade->listaMisseis[i]);
+    }
+}
 
 /**
  * @brief Imprime o relatório final na saída padrão, sem processar ataques.
  * 
  * @param cidade Ponteiro para a cidade que terá os dados impressos.
  */
-void ImprimeDados(tCidade cidade);
+void ImprimeDados(tCidade cidade) {
+    for(int i = 0; i < cidade->qtdDefesas; i++) 
+        ImprimeDefesa(cidade->listaDefesas[i]);
+
+    for(int i = 0; i < cidade->qtdMisseis; i++)
+        ImprimeMissil(cidade->listaMisseis[i]);
+
+    printf("Efetividade: %.2f%%", 100.0*(cidade->ataqueSofrido/cidade->ataqueTotal));
+}
