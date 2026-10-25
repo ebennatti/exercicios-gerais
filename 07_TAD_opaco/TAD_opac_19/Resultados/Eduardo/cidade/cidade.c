@@ -23,7 +23,7 @@
 
 struct cidade {
     char nome[MAX_NOME];
-    int x, y;
+    float x, y;
     int qtdMisseis, qtdDefesas;
     tMissil *listaMisseis;
     tDefesa *listaDefesas;
@@ -42,7 +42,7 @@ tCidade CriaCidade() {
     c->listaMisseis = calloc(QTD_MIS, sizeof(*c->listaMisseis));
     c->ataqueSofrido = 0;
     c->ataqueTotal = 0;
-    scanf("C %d %d\n", &c->x, &c->y);
+    scanf("C %f %f\n", &c->x, &c->y);
     return c;
 }
 
@@ -83,12 +83,12 @@ tCidade LeEntrada(tCidade cidade) {
  */
 void LiberaCidade(tCidade cidade) {
     for(int i = 0; i < cidade->qtdDefesas; i++) {
-        free(cidade->listaDefesas[i]);
+        LiberaDefesa(cidade->listaDefesas[i]);
     }
     free(cidade->listaDefesas);
 
     for(int i = 0; i < cidade->qtdMisseis; i++) {
-        free(cidade->listaMisseis[i]);
+        LiberaMissil(cidade->listaMisseis[i]);
     }
     free(cidade->listaMisseis);
 
@@ -111,7 +111,9 @@ void ProcessaAtaques(tCidade cidade) {
                 }
             } 
         }
-        cidade->ataqueSofrido += GetMissilPoder(cidade->listaMisseis[i]);
+
+        if(GetMissilX(cidade->listaMisseis[i]) <= cidade->x && GetMissilY(cidade->listaMisseis[i]) <= cidade->y)
+            cidade->ataqueSofrido += GetMissilPoder(cidade->listaMisseis[i]);
     }
 }
 
@@ -127,5 +129,5 @@ void ImprimeDados(tCidade cidade) {
     for(int i = 0; i < cidade->qtdMisseis; i++)
         ImprimeMissil(cidade->listaMisseis[i]);
 
-    printf("Efetividade: %.2f%%", 100.0*(cidade->ataqueSofrido/cidade->ataqueTotal));
+    printf("Efetividade: %.2f%%", 100.0*(1.0 - (cidade->ataqueSofrido/cidade->ataqueTotal)));
 }

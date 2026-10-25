@@ -1,32 +1,15 @@
-==91406== Memcheck, a memory error detector
-==91406== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==91406== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==91406== Command: Resultados/Eduardo/cidade/prog Resultados/Eduardo/cidade/Casos/4
-==91406== Parent PID: 91405
-==91406== 
-==91406== 
-==91406== HEAP SUMMARY:
-==91406==     in use at exit: 26 bytes in 13 blocks
-==91406==   total heap usage: 44 allocs, 31 frees, 10,078 bytes allocated
-==91406== 
-==91406== 8 bytes in 4 blocks are definitely lost in loss record 1 of 2
-==91406==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==91406==    by 0x1097DF: LeDefesa (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406==    by 0x1093AC: LeEntrada (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406==    by 0x109A9D: main (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406== 
-==91406== 18 bytes in 9 blocks are definitely lost in loss record 2 of 2
-==91406==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==91406==    by 0x109B3F: LeMissil (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406==    by 0x10936B: LeEntrada (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406==    by 0x109A9D: main (in /home/ebsevangelista/exercicios-gerais/07_TAD_opaco/TAD_opac_19/Resultados/Eduardo/cidade/prog)
-==91406== 
-==91406== LEAK SUMMARY:
-==91406==    definitely lost: 26 bytes in 13 blocks
-==91406==    indirectly lost: 0 bytes in 0 blocks
-==91406==      possibly lost: 0 bytes in 0 blocks
-==91406==    still reachable: 0 bytes in 0 blocks
-==91406==         suppressed: 0 bytes in 0 blocks
-==91406== 
-==91406== For lists of detected and suppressed errors, rerun with: -s
-==91406== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==25090== Memcheck, a memory error detector
+==25090== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==25090== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==25090== Command: Resultados/Eduardo/cidade/prog Resultados/Eduardo/cidade/Casos/4
+==25090== Parent PID: 25089
+==25090== 
+==25090== 
+==25090== HEAP SUMMARY:
+==25090==     in use at exit: 0 bytes in 0 blocks
+==25090==   total heap usage: 44 allocs, 44 frees, 10,078 bytes allocated
+==25090== 
+==25090== All heap blocks were freed -- no leaks are possible
+==25090== 
+==25090== For lists of detected and suppressed errors, rerun with: -s
+==25090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

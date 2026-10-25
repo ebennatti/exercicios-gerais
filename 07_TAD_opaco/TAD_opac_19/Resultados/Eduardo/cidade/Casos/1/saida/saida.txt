@@ -4,4 +4,4 @@ M-1: 0.00
 M-2: 32.60
 M-3: 10.60
 M-4: 35.50
-Efetividade: 47.67%
+Efetividade: 52.33%

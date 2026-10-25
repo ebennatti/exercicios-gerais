@@ -12,4 +12,4 @@ M-7: 0.00
 M-8: 0.00
 M-9: 0.00
 M-10: 50.00
-Efetividade: 3.34%
+Efetividade: 96.66%
