@@ -1,0 +1,398 @@
+- Arquivo de configuração encontrado!
+ - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+
+#######################################
+ALUNO: Eduardo
+#######################################
+
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Eduardo:
+ - Diretório Resultados/Eduardo criado com sucesso!
+ - Diretório Resultados/Eduardo/main criado com sucesso!
+ - Diretório Resultados/Eduardo/estacionamento criado com sucesso!
+ - Diretório Resultados/Eduardo/veiculo criado com sucesso!
+ - Diretório Resultados/Eduardo/proprietario criado com sucesso!
+ - Diretório Resultados/Eduardo/datahora criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Eduardo/datahora.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/datahora.h' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/estacionamento.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/estacionamento.h' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/main.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/proprietario.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/proprietario.h' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/veiculo.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/veiculo.h' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/main
+ - Copiando os Includes/datahora.h Includes/estacionamento.h Includes/proprietario.h Includes/veiculo.h do professor para a pasta Resultados/Eduardo/main
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Eduardo/main
+ - Removendo o main.o do professor da pasta Resultados/Eduardo/main
+ - Copiando o Respostas/Eduardo/main.c do aluno para a pasta Resultados/Eduardo/main
+ - Pasta estacionamento:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/estacionamento
+ - Copiando os Includes/datahora.h Includes/estacionamento.h Includes/proprietario.h Includes/veiculo.h do professor para a pasta Resultados/Eduardo/estacionamento
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Eduardo/estacionamento
+ - Removendo o estacionamento.o do professor da pasta Resultados/Eduardo/estacionamento
+ - Copiando o Respostas/Eduardo/estacionamento.c do aluno para a pasta Resultados/Eduardo/estacionamento
+ - Pasta veiculo:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/veiculo
+ - Copiando os Includes/datahora.h Includes/estacionamento.h Includes/proprietario.h Includes/veiculo.h do professor para a pasta Resultados/Eduardo/veiculo
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Eduardo/veiculo
+ - Removendo o veiculo.o do professor da pasta Resultados/Eduardo/veiculo
+ - Copiando o Respostas/Eduardo/veiculo.c do aluno para a pasta Resultados/Eduardo/veiculo
+ - Pasta proprietario:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/proprietario
+ - Copiando os Includes/datahora.h Includes/estacionamento.h Includes/proprietario.h Includes/veiculo.h do professor para a pasta Resultados/Eduardo/proprietario
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Eduardo/proprietario
+ - Removendo o proprietario.o do professor da pasta Resultados/Eduardo/proprietario
+ - Copiando o Respostas/Eduardo/proprietario.c do aluno para a pasta Resultados/Eduardo/proprietario
+ - Pasta datahora:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/datahora
+ - Copiando os Includes/datahora.h Includes/estacionamento.h Includes/proprietario.h Includes/veiculo.h do professor para a pasta Resultados/Eduardo/datahora
+ - Copiando os Includes/*.o do professor para a pasta Resultados/Eduardo/datahora
+ - Removendo o datahora.o do professor da pasta Resultados/Eduardo/datahora
+ - Copiando o Respostas/Eduardo/datahora.c do aluno para a pasta Resultados/Eduardo/datahora
+ - Copiando Arquivos Extras do Aluno:
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Compilação dos arquivos do aluno na pasta main ok!
+ - Arquivo de output gerado: Resultados/Eduardo/main/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta estacionamento ok!
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta veiculo ok!
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta proprietario ok!
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/result_compilation.txt
+ - Compilação dos arquivos do aluno na pasta datahora ok!
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/result_compilation.txt
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/main/result_linking.txt
+ - Pasta estacionamento:
+ - Gerando o binário prog linkando com o(s) arquivo(s) estacionamento/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/result_linking.txt
+ - Pasta veiculo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) veiculo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/result_linking.txt
+ - Pasta proprietario:
+ - Gerando o binário prog linkando com o(s) arquivo(s) proprietario/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/result_linking.txt
+ - Pasta datahora:
+ - Gerando o binário prog linkando com o(s) arquivo(s) datahora/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 10:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 131, frees: 131, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 7:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 8:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta main / Caso 9:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta main (máximo 3.0) - 100.00 de 100 - 100.00% de 3.0: 3.00.
+ -----
+ - Pasta estacionamento / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 23, frees: 23, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 10:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 155, frees: 155, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 3, frees: 3, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 7:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 8:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta estacionamento / Caso 9:
+ - Arquivo de output gerado: Resultados/Eduardo/estacionamento/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta estacionamento (máximo 3.0) - 100.00 de 100 - 100.00% de 3.0: 3.00.
+ -----
+ - Pasta veiculo / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 10:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 131, frees: 131, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 7:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 8:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta veiculo / Caso 9:
+ - Arquivo de output gerado: Resultados/Eduardo/veiculo/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta veiculo (máximo 1.5) - 100.00 de 100 - 100.00% de 1.5: 1.50.
+ -----
+ - Pasta proprietario / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 10:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 131, frees: 131, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 7:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 8:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta proprietario / Caso 9:
+ - Arquivo de output gerado: Resultados/Eduardo/proprietario/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta proprietario (máximo 1.0) - 100.00 de 100 - 100.00% de 1.0: 1.00.
+ -----
+ - Pasta datahora / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 22, frees: 22, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 10:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/10/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 131, frees: 131, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 4, frees: 4, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 7, frees: 7, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 8, frees: 8, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 13, frees: 13, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 7:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/7/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 19, frees: 19, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 8:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/8/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 26, frees: 26, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Pasta datahora / Caso 9:
+ - Arquivo de output gerado: Resultados/Eduardo/datahora/Casos/9/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 18, frees: 18, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o saida.txt: Ok! Peso: 10
+ - Nota para o Caso (soma dos pesos): 10.0 (soma total) - 0% (desconto do valgrind) = 10.00 de 10 pontos.
+ - Nota para a pasta datahora (máximo 1.50) - 100.00 de 100 - 100.00% de 1.50: 1.50.
+ -----
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Aluno: Eduardo
+ - Arquivos Esperados Corretos: 9 de 9
+ - Pastas Compiladas Corretamente: 5 de 5 
+ - Pastas Linkadas Corretamente: 5 de 5
+ - Teste main
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Eduardo para o teste main: 3.00
+ - Teste estacionamento
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Eduardo para o teste estacionamento: 3.00
+ - Teste veiculo
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Eduardo para o teste veiculo: 1.50
+ - Teste proprietario
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Eduardo para o teste proprietario: 1.00
+ - Teste datahora
+ - Resultados corretos: 10 de 10
+ - Valgrinds corretos: 10 de 10
+ - Nota de Eduardo para o teste datahora: 1.50
+ - Nota de Eduardo: 0+(1.00)+(3.00)+(1.50)+(1.50)+(3.00)
+ - Nota de Eduardo: 10.00
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+
+
