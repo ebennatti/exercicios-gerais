@@ -1,0 +1,11 @@
+Arquivos
+	saida.txt=10
+Valgrind
+	desconto=0.3
+Validações
+	main=2.5
+	completo=0
+	carregador=2.0
+	estacao=1.5
+	veiculo=1.5
+	utils=2.5

@@ -1,0 +1,29 @@
+Arquivos Esperados Corretos: 9 de 9
+Pastas Compiladas Corretamente: 6 de 6 
+Pastas Linkadas Corretamente: 6 de 6
+Teste main
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste main: 2.50
+Teste completo
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste completo: 0
+Teste carregador
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste carregador: 2.00
+Teste estacao
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste estacao: 1.50
+Teste veiculo
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste veiculo: 1.50
+Teste utils
+  - Resultados corretos: 10 de 10
+  - Valgrinds corretos: 10 de 10
+Nota de eduardo para o teste utils: 2.50
+Nota de eduardo: 0+(2.50)+(2.00)+(1.50)+(2.50)+(1.50)+(0)
+Nota de eduardo: 10.00
