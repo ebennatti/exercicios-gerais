@@ -1,0 +1,15 @@
+==41811== Memcheck, a memory error detector
+==41811== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==41811== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==41811== Command: Resultados/Eduardo/main/prog Resultados/Eduardo/main/Casos/2
+==41811== Parent PID: 41810
+==41811== 
+==41811== 
+==41811== HEAP SUMMARY:
+==41811==     in use at exit: 0 bytes in 0 blocks
+==41811==   total heap usage: 15 allocs, 15 frees, 8,453 bytes allocated
+==41811== 
+==41811== All heap blocks were freed -- no leaks are possible
+==41811== 
+==41811== For lists of detected and suppressed errors, rerun with: -s
+==41811== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
