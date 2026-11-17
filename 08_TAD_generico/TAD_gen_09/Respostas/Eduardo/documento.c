@@ -7,23 +7,6 @@
 /*
     Estrutura do tipo Documento contendo os atributos necessários para a manipulação
 */
-
-// /*
-//     Definição dos tipo ponteiro para função utilizado para imprimir um documento genérico
-// */
-// typedef void (*func_ptr_imprime)(void *dado);
-
-// /*
-//     Definição do tipo ponteiro para função utilizado para desalocar um documento genérico
-// */
-// typedef void (*func_ptr_desaloca)(void *dado);
-
-// /*
-//     Definição do tipo ponteiro para função utilizado para calcular o preço de impressão
-//     de um documento genérico
-// */
-// typedef float (*func_ptr_calculaPreco)(void *dado, float precoCaractere);
-
 struct _Documento {
     void *dado;
     func_ptr_imprime imprimeDado;
@@ -43,8 +26,8 @@ Documento *criaDocumento(void *dado, func_ptr_imprime imprimeDado,
                          func_ptr_desaloca desalocaDado, func_ptr_calculaPreco calculaPrecoDado) {
     Documento *d = (Documento *) calloc(1, sizeof(Documento));
     d->dado = dado;
-    d->desalocaDado = desalocaDado;
     d->calculaPrecoDado = calculaPrecoDado;
+    d->desalocaDado = desalocaDado;
     d->imprimeDado = imprimeDado;
 
     return d;
@@ -73,6 +56,6 @@ float calculaPrecoImpressaoDocumento(Documento *doc, float precoCaractere) {
     @param doc: ponteiro para um documento a ser desalocado
 */
 void desalocaDocumento(Documento *doc) {
-    free(doc->dado);
+    doc->desalocaDado(doc->dado);
     free(doc);
 }

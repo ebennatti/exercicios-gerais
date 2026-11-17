@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "documento.h"
 #include "fila_imp.h"
+#include "documento.h"
 
 /*
     Estrutura do tipo FilaImp contendo os atributos necessários para a manipulação
 */
 struct _FilaImp {
-    Documento **listaDocs;
+    Documento **filaDocs;
     int qtd;
 };
 
@@ -18,11 +18,11 @@ struct _FilaImp {
     @return: endereço de memória da fila de impressão criada
 */
 FilaImp *criaFilaImp() {
-    FilaImp *lista = (FilaImp *) calloc(1, sizeof(FilaImp));
-    lista->listaDocs = NULL;
-    lista->qtd = 0;
+    FilaImp *f = (FilaImp *) calloc(1, sizeof(FilaImp));
+    f->filaDocs = NULL;
+    f->qtd = 0;
 
-    return lista;
+    return f;
 }
 
 /*
@@ -31,10 +31,10 @@ FilaImp *criaFilaImp() {
 */
 void desalocaFilaImp(FilaImp *f) {
     for(int i = 0; i < f->qtd; i++) {
-        desalocaDocumento(f->listaDocs[i]);
+        desalocaDocumento(f->filaDocs[i]);
     }
-    free(f->listaDocs);
 
+    free(f->filaDocs);
     free(f);
 }
 
@@ -48,10 +48,11 @@ void desalocaFilaImp(FilaImp *f) {
 */
 void insereDocumentoFilaImp(FilaImp *f, void *dado, func_ptr_imprime imprime,
                             func_ptr_desaloca desaloca, func_ptr_calculaPreco calculaPreco) {
-    f->listaDocs = (Documento **) realloc(f->listaDocs, (f->qtd + 1)*sizeof(Documento *));
-    f->listaDocs[f->qtd] = criaDocumento(dado, imprime, desaloca, calculaPreco); 
+    f->filaDocs = (Documento **) realloc(f->filaDocs, (f->qtd + 1)*sizeof(Documento *));
+    f->filaDocs[f->qtd] = criaDocumento(dado, imprime, desaloca, calculaPreco);
     f->qtd++;
 }
+
 /*
     Função que retorna a quantidade de documentos na fila de impressão
     @param f: ponteiro para a fila de impressão
@@ -68,12 +69,12 @@ int quantidadeDocumentosNaFilaImp(FilaImp *f) {
     @return: preço total de impressão da fila
 */
 float precoTotalImpressaoFilaImp(FilaImp *f, float precoCaractere) {
-    float preco = 0;
+    float total = 0;
     for(int i = 0; i < f->qtd; i++) {
-        preco += calculaPrecoImpressaoDocumento(f->listaDocs[i], precoCaractere);
+        total += calculaPrecoImpressaoDocumento(f->filaDocs[i], precoCaractere);
     }
 
-    return preco;
+    return total;
 }
 
 /*
@@ -83,6 +84,6 @@ float precoTotalImpressaoFilaImp(FilaImp *f, float precoCaractere) {
 */
 void imprimeFilaImp(FilaImp *f) {
     for(int i = 0; i < f->qtd; i++) {
-        imprimeDocumento(f->listaDocs[i]);
+        imprimeDocumento(f->filaDocs[i]);
     }
 }

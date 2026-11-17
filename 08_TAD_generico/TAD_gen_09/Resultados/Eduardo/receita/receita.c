@@ -8,9 +8,8 @@
     Estrutura do tipo Receita contendo os atributos necessários para a manipulação
 */
 struct _Receita {
-    char nomeMedico[101], nomePaciente[101], nomeMedicamento[101], instrucoes[101];
+    char nomeMedicamento[100], nomePaciente[100], nomeMedico[100], instrucoes[200];
 };
-
 
 /*
     Função que cria uma receita e retorna o seu endereço de memória
@@ -26,8 +25,9 @@ Receita *criaReceita(char *nomeMedicamento, char *nomePaciente, char *nomeMedico
     strcpy(r->nomeMedicamento, nomeMedicamento);
     strcpy(r->nomeMedico, nomeMedico);
     strcpy(r->nomePaciente, nomePaciente);
-    
+
     return r;
+
 }
 
 /*
@@ -35,14 +35,18 @@ Receita *criaReceita(char *nomeMedicamento, char *nomePaciente, char *nomeMedico
     @return: endereço de memória da receita lida
 */
 Receita *leReceita() {
-
-    char nomeMedico[101], nomePaciente[101], nomeMedicamento[101], instrucoes[101];
+//     DR. MUNDO  (nome do médico) 
+// JOAO MATIAS (nome do paciente) 
+// PARACETAMOL 500MG (nome do medicamento) 
+// TOMAR EM CASO DE DOR (instruções para uso do medicamento)
+    char nomeMedicamento[100], nomePaciente[100], nomeMedico[100], instrucoes[200];
     scanf("%[^\n]\n", nomeMedico);
     scanf("%[^\n]\n", nomePaciente);
     scanf("%[^\n]\n", nomeMedicamento);
     scanf("%[^\n]\n", instrucoes);
-    
+
     return criaReceita(nomeMedicamento, nomePaciente, nomeMedico, instrucoes);
+
 }
 
 /*
@@ -52,10 +56,10 @@ Receita *leReceita() {
     @return: preço de impressão da receita
 */
 float calculaPrecoImpressaoReceita(void *dado, float precoCaractere) {
-    Receita *r = (Receita *) dado;
+    Receita *r = (Receita *)dado;
     int tam = strlen(r->instrucoes) + strlen(r->nomeMedicamento) + strlen(r->nomeMedico) + strlen(r->nomePaciente);
-    
-    return tam*precoCaractere;
+
+    return tam * precoCaractere;
 }
 
 /*
@@ -63,12 +67,12 @@ float calculaPrecoImpressaoReceita(void *dado, float precoCaractere) {
     @param dado: ponteiro genérico para a receita a ser impressa
 */
 void imprimeReceita(void *dado) {
-    Receita *r = (Receita *) dado;
-    printf("- - RECEITA - -\n");
-    printf("MEDICAMENTO: %s\n", r->nomeMedicamento);
-    printf("PACIENTE: %s\n", r->nomePaciente);
-    printf("INSTRUCOES: %s\n", r->instrucoes);
-    printf("MEDICO: %s\n", r->nomeMedico);
+    Receita *r = (Receita *)dado;
+    printf("- - RECEITA - -\n"); 
+    printf("MEDICAMENTO: %s\n", r->nomeMedicamento); 
+    printf("PACIENTE: %s\n", r->nomePaciente); 
+    printf("INSTRUCOES: %s\n", r->instrucoes); 
+    printf("MEDICO: %s\n", r->nomeMedico); 
     printf("- - - - - - - -\n");
 }
 
@@ -77,6 +81,6 @@ void imprimeReceita(void *dado) {
     @param dado: ponteiro genérico para a receita a ser desalocada
 */
 void desalocaReceita(void *dado) {
-    Receita *r = (Receita *) dado;
+    Receita *r = (Receita *)dado;
     free(r);
 }

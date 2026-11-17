@@ -2,13 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 #include "exame.h"
 
-/*
-    Estrutura do tipo Receita contendo os atributos necessários para a manipulação
-*/
 struct _Exame {
-    char nomePaciente[101], nomeMedico[101], descricao[101];
+    char descricao[100], nomePaciente[100], nomeMedico[100];
 };
 
 
@@ -19,11 +17,14 @@ Exame *criaExame(char *descricao, char *nomePaciente, char *nomeMedico) {
     strcpy(e->nomePaciente, nomePaciente);
 
     return e;
+
 }
 
-
 Exame *leExame() {
-    char nomePaciente[101], nomeMedico[101], descricao[101];
+//     DR. MUNDO (nome do médico) 
+// JAYCE BARBOSA (nome do paciente) 
+// RESSONANCIA MAGNETICA PARA AVALIACAO DA LOMBAR (justificativa) 
+    char descricao[100], nomePaciente[100], nomeMedico[100];
     scanf("%[^\n]\n", nomeMedico);
     scanf("%[^\n]\n", nomePaciente);
     scanf("%[^\n]\n", descricao);
@@ -31,25 +32,23 @@ Exame *leExame() {
     return criaExame(descricao, nomePaciente, nomeMedico);
 }
 
-
 float calculaPrecoImpressaoExame(void *dado, float precoCaractere) {
-    Exame *e = (Exame *) dado;
+    Exame *e = (Exame *)dado;
     int tam = strlen(e->descricao) + strlen(e->nomeMedico) + strlen(e->nomePaciente);
-    return tam*precoCaractere;
+
+    return tam * precoCaractere;
 }
 
-
 void imprimeExame(void *dado) {
-    Exame *e = (Exame *) dado;
+    Exame *e = (Exame *)dado;
     printf("- - EXAME - -\n");
     printf("PACIENTE: %s\n", e->nomePaciente);
-    printf("SOLICITACAO: %s\n", e->descricao);
+    printf("SOLICITACAO: %s\n", e->descricao); 
     printf("MEDICO: %s\n", e->nomeMedico);
     printf("- - - - - - -\n");
 }
 
-
 void desalocaExame(void *dado) {
-    Exame *e = (Exame *) dado;
+    Exame *e = (Exame *)dado;
     free(e);
 }
